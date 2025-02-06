@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                'header header header'
+                'navbar content aside'
+                'footer footer footer';
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 3fr 1fr;
+            height: 100vh;
+            margin: 0;
+            gap: 1.5%;
+            background-color: silver;
+        }
+
+        header {
+            grid-area: header;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            grid-area: navbar;
+            background-color: rgb(12, 175, 240);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            
+        }
+
+        main {
+            grid-area: content;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: rgb(12, 175, 240);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Navbar</nav>
+    <main>Content</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>
